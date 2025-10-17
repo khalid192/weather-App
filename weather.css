@@ -75,23 +75,30 @@ font-size: small;
 margin: 40px;
 }
 
+
+
 #Forecast{
-    display: flex;
+    display:flex;
     justify-content: space-between;
+
+}
+.hide{
+display: none !important;
 }
 #infowether{
     
-    background: rgba(70, 70, 70, 0.295);
-    width: 300px;
+    background: rgba(65, 64, 64, 0);
+    width: 350px;
     height: 200px;
-    font-size: 20px;
-    margin-right: 40px;
+    font-size: 24 px;
+    margin-right: 60px;
     margin-top: 70px;
-    border-radius: 20px;
+    border-radius: 30px 10px;
      display: flex;
      justify-content: center;
     
-    color: #ffffff88;
+    color: #ffffffbd;
+    box-shadow: rgba(156, 151, 151, 0) 5px 10px 15px 1px;
 }
 
 #deg{
@@ -105,8 +112,8 @@ margin: 40px;
 }
 #locationparagraph{
     position: absolute;
-    right: 130px;
-    width: 200px;
+    right: 100px;
+    width: 300px;
     display:flex ;
 color: aliceblue;
 }
@@ -114,6 +121,8 @@ color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
     font-weight: bolder;
+   
+   
 }
 #locationicone{
     width: 40px;
@@ -149,4 +158,52 @@ th{
     font-weight:400;
     font-size: large;
 }
+#anim{
+   position: absolute;
+   top: 0px;
+   z-index: -1;
+
+}
+#anim h2{
+text-align: center;
+color: rgb(87, 86, 87);
+position:absolute;
+top: 100px;
+left: 30px;
+}
+#days{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 26%;
+    background-color: rgba(127, 255, 212, 0);
+    justify-content: space-around;
+}
+#days div{
+    display: block;
+    justify-items: center;
+    height: 100%;
+    width: 100px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.548);
+    
+    color: rgb(81, 117, 148);
+    padding: 1fr 20px;
+    overflow: hidden;
+    text-align: center;
+}
+#days div h4{
+background-color: rgba(28, 158, 209, 0.247);
+padding:10%;
+width: 100px;
+}
+#days div img{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    margin-top: 15px;
+   
+}
+
 

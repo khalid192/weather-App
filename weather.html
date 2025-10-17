@@ -12,9 +12,13 @@
           <div id="searcharea">
             <input  id="search" type="text"  placeholder=" Where do you want the weather ?" ><img onclick="Fsearch()" id="iconsearch" src="/img/search.png" alt="">
             </div>
-
-            <div id="Forecast">
-
+            <div style="width: 100%; display: flex; justify-content: center;">
+               <div id="anim" style="height: 500px; padding: 0;"> <h2>Please enter a city or country</h2></div>
+            </div>
+   
+            <div  id="Forecast" class="hide">
+               
+          
                <div id="locationparagraph"><img id="locationicone" src="/img/location.png" alt=""><h4 id="city"></h4></div>
 
                <img id="iconeforecast" src="" alt="">
@@ -41,11 +45,30 @@
               </table>
                
              </div>
+             
             </div>
+    
+
+             <div id="days">
+               
+             </div>
+
+
         </div>
 
     </div>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+  <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('anim'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'wethers_icone/Weather.json'
+    });
+  </script>
 <script src="weather.js"></script>
 </html>
