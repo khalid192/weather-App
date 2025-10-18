@@ -6,7 +6,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
-    background-image: url(/img/mountain.jpg);
+    background-image: url(/img/alberta-2297204.jpg);
     background-size: cover;
 }
 #evrything{
@@ -17,8 +17,8 @@ body{
     align-items: center;
 }
 #container{
-    width: 800px;
-    height: 600px;
+    width:50%;
+    height: 500px;
     background-color: rgba(66, 105, 54, 0.13);
     backdrop-filter: blur(3px);
     border-radius: 20px;
@@ -32,7 +32,7 @@ body{
 
 
 #search{
-height: 55px;
+height: 45px;
 width:80% ;
 margin-top: 20px;
 border-radius: 10px;
@@ -40,13 +40,14 @@ background-color: rgba(0, 0, 0, 0.205);
 border-style: none;
 padding: 0 10px;
 color: aliceblue;
-font-size: large;
+font-size: 15px;
 transition: .6s;
 }
 #search::placeholder{
 color: rgba(250, 235, 215, 0.795);
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: small;
+font-size: 12px;
+
 }
 
 #search:focus{
@@ -56,23 +57,26 @@ font-size: small;
 }
 #iconsearch{
    position: absolute;
-      height: 45px;
+      height: 35px;
     border-radius:50%;
-    right: 89px;
-    top: 44px;
+    right:12%;
+    top: 45px;
     cursor: pointer;
     transition: .1s;
 
 }
 #iconsearch:active{
   
-      height: 48px;
+      height: 40px;
    
 }
 #iconeforecast{
- width: 200px;
+ width: 150px;
+ height: 150px;
  
-margin: 40px;
+margin: 70px;
+margin-top: 40px;
+
 }
 
 
@@ -80,17 +84,17 @@ margin: 40px;
 #Forecast{
     display:flex;
     justify-content: space-between;
+    width: 100%;
 
 }
 .hide{
 display: none !important;
 }
 #infowether{
-    
     background: rgba(65, 64, 64, 0);
-    width: 350px;
-    height: 200px;
-    font-size: 24 px;
+    width: 40%;
+    height: 160px;
+    font-size: 15px;
     margin-right: 60px;
     margin-top: 70px;
     border-radius: 30px 10px;
@@ -105,37 +109,40 @@ display: none !important;
     display: flex;
     color: rgba(240, 248, 255, 0.781);
     position: absolute;
-    top: 365px;
+    top:300px;
     left: 85px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:bold;
 }
 #locationparagraph{
     position: absolute;
-    right: 100px;
+    left: 60px;
+    top: 90px;;
     width: 300px;
     display:flex ;
-color: aliceblue;
+color: rgba(240, 248, 255, 0.753);
 }
 #locationparagraph h4{
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 20px;
+    margin-top: 5px;
     font-weight: bolder;
+    font-size: smaller;
    
    
 }
 #locationicone{
-    width: 40px;
+    width: 25px;
+    height: 25px;
     
 }
 table{
-    width: 450px;
+    width: 250px;
    align-items: center;
     
 
     
 }table img{
-    width: 35px;
+    width: 30px;
     
 }
 table td ,th{
@@ -152,8 +159,8 @@ th{
     display: flex;
     color: rgba(200, 203, 206, 0.582);
     position: absolute;
-    top: 410px;
-    left: 70px;
+    top: 350px;
+    left: 90px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:400;
     font-size: large;
@@ -166,17 +173,19 @@ th{
 }
 #anim h2{
 text-align: center;
-color: rgb(87, 86, 87);
+color: rgba(223, 237, 243, 0.795);
 position:absolute;
 top: 100px;
 left: 30px;
+font-size: 20px;
+font-family:'Times New Roman', Times, serif;
 }
 #days{
     position: absolute;
     display: flex;
     bottom: 0;
     width: 100%;
-    height: 26%;
+    height: 24%px;
     background-color: rgba(127, 255, 212, 0);
     justify-content: space-around;
 }
@@ -184,26 +193,49 @@ left: 30px;
     display: block;
     justify-items: center;
     height: 100%;
-    width: 100px;
-    border-radius: 30px;
+    width: 50px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.548);
     
     color: rgb(81, 117, 148);
     padding: 1fr 20px;
     overflow: hidden;
     text-align: center;
+    transition: .2s;
+}
+#days div:hover{
+ background-color: rgb(255, 255, 255);
+ width: 55px;
+ color: black;
 }
 #days div h4{
 background-color: rgba(28, 158, 209, 0.247);
-padding:10%;
-width: 100px;
+padding:8%;
+width: 50px;
+font-size: 20px;
 }
 #days div img{
     display: flex;
     justify-content: center;
-    width: 50px;
-    margin-top: 15px;
+    width: 30px;
+    margin-top: 10px;
    
+}
+#days div p{
+    font-size: 15px;
+    padding-bottom: 5px;
 }
 
 
+#time{
+    position: absolute;
+    color: rgba(255, 250, 250, 0.747);
+    left: 70px;
+    top: 15px;
+    font-size: 14px;
+}
+#timeday{  position: absolute;
+    color: rgba(255, 250, 250, 0.747);
+    right: 70px;
+    top: 15px;
+font-size: 14px;}
